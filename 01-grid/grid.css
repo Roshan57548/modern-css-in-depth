@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas: "sidebar header" "sidebar content";
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: red;
+}
+
+.header {
+  grid-area: header;
+  background-color: gray;
+}
+
+.content {
+  grid-area: content;
+  background-color: yellow;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "layout-header layout-header layout-header"
+    "layout-aside layout-main layout-right-aside"
+    "layout-footer layout-footer layout-footer";
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+.layout-header {
+  grid-area: layout-header;
+  background-color: rgb(255, 149, 0);
+}
+
+.layout-aside {
+  grid-area: layout-aside;
+  background-color: gray;
+}
+
+.layout-main {
+  grid-area: layout-main;
+  background-color: rgb(110, 6, 131);
+}
+
+.layout-right-aside {
+  grid-area: layout-right-aside;
+  background-color: rgb(75, 194, 6);
+}
+
+.layout-footer {
+  grid-area: layout-footer;
+  background-color: rgb(0, 144, 247);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+}
+
+.item3 {
+  grid-column: 4;
+  grid-row: 1 / span 3;
+}
+
+.item5 {
+  grid-column: 2;
+  grid-row: 2 / span 2;
+}
+
+.item6 {
+  grid-column: 3;
+  grid-row: 2 / span 2;
+}
