@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="is-where.css" />
+  </head>
+  <body class="condition">
+    <!-- 
+    CSS Specificity Calculation (quick & clear) 
+    4-part value: (a, b, c, d) 
+    a Inline styles 
+    b IDs 
+    c Classes, attributes, pseudo-classes 
+    d Elements, pseudo-elements
+    -->
+
+    <!-- 
+    :is() specificity Takes the highest specificity selector inside 
+        :is(h1, .title, #main) 
+        h1 → (0,0,0,1) 
+        .title → (0,0,1,0) 
+        #main → (0,1,0,0) 
+    Final specificity = (0,1,0,0)
+    -->
+
+    <!-- 
+       :where() specificity
+       Always zero, no matter what's inside 
+       :where(#app .card h2) 
+➡️     (0,0,0,0)
+    -->
+    
+    <h1>Demo of :is() and :where()</h1>
+
+    <p class="intro">This is some text with class="intro".</p>
+
+    <p>Example of unordered list:</p>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+
+    <p>Example of ordered list:</p>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+
+    <p>This is some text.</p>
+  </body>
+</html>

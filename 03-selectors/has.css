@@ -1,0 +1,7 @@
+.condition:has(h1) {
+  background-color: blue;
+}
+
+.condition:has(h1) > p {
+  color: white;
+}

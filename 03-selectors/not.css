@@ -1,0 +1,17 @@
+.special {
+  border: 2px solid maroon;
+}
+
+p:not(.special) {
+  color: green;
+}
+
+button:not(.primary) {
+  background-color: #cd1515;
+  color: #000;
+}
+
+li:not(.active, .disabled) {
+  color: #0d0395;
+  font-size: 20px;
+}

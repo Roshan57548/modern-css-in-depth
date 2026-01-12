@@ -1,0 +1,31 @@
+
+/* ===================================================== */
+.condition li {
+  background-color: blue;
+}
+
+.condition :is(h1, li) {
+  background-color: red;
+  color: white;
+}
+
+.condition h1 {
+  background-color: blue;
+}
+/* ===================================================== */
+
+p.intro {
+    background-color: purple;
+}
+
+:where(p.intro, .condition p) {
+  background-color: green;
+  color: white;
+}
+
+.condition p {
+    background-color: yellow;
+    color: black;
+}
+
+/* ===================================================== */
