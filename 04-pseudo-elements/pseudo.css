@@ -1,0 +1,21 @@
+.quote {
+  position: relative;
+  padding: 20px;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.quote::before {
+  content: "“";
+  color: #09ff00;
+}
+
+.quote::after {
+  content: "”";
+  color: #09ff00;
+}
+
+.link::after {
+  content: " ↗";
+  font-size: 0.8em;
+}
