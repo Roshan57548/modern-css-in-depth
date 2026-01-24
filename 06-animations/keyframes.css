@@ -1,0 +1,33 @@
+/* @keyframes 
+
+duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+
+/* animation: 3s ease-in 1s 2 reverse both paused slide-in; */
+
+/* 1. Define the Script */
+@keyframes pulse-effect {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+    background-color: #e74c3c; /* Changes to red halfway */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 2. Apply to the Element */
+.pulse-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 50%;
+
+  /* name | duration | easing-function | delay | iteration-count*/
+  animation: pulse-effect 3s 1s ease-in-out infinite;
+}

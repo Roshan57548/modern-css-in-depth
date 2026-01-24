@@ -1,0 +1,38 @@
+
+
+/* .element {
+
+    transition: [property] [duration] [timing-function] [delay];
+    transition: background-color 4ms ease-in 4s;
+
+    transition: all 4ms ease-in 4s;
+    all - applies to all properties that change
+
+    linear Same speed from start to finish (can look robotic). 
+    ease Slow start, than fast, slow end.
+    ease-in Starts slow, then speeds up. 
+    ease-out Starts fast, then slows down at the end(feels natural for UI). 
+    ease-in-out Slow start, fast middle, slow end.
+    cubic-bezier Custom math to create bounces or unique elastic effects. 
+
+} */
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out 2ms; 
+}
+
+.box:hover {
+  background-color: #e73cbc;
+  color: black;
+}
